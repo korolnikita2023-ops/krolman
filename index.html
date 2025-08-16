@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Pac-Man</h1>
+            <div class="score">Счёт: <span id="score">0</span></div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="controls">
+            <div class="control-row">
+                <button class="control-btn" id="upBtn">↑</button>
+            </div>
+            <div class="control-row">
+                <button class="control-btn" id="leftBtn">←</button>
+                <button class="control-btn" id="downBtn">↓</button>
+                <button class="control-btn" id="rightBtn">→</button>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <p>Съедайте белые точки и избегайте призраков!</p>
+        </div>
+    </div>
+    
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>Игра окончена!</h2>
+            <p>Приходите к нам за настоящими игрушками по ссылке:</p>
+            <a href="https://pinkrabbit.ru/" target="_blank" class="game-link">https://pinkrabbit.ru/</a>
+            <button id="restartBtn" class="restart-btn">Играть снова</button>
+        </div>
+    </div>
+    
+    <script>
+        console.log('HTML loaded, about to load game.js');
+    </script>
+    <script src="game.js?v=14"></script>
+</body>
+</html>
