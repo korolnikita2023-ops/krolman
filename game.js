@@ -31,11 +31,11 @@ class PacManGame {
     loadImages() {
         this.images = {};
         const imageFiles = {
-            pacman: '../png/packman.png',
-            ghost1: '../png/ghost 1.png',
-            ghost2: '../png/ghost 2.png',
-            ghost3: '../png/ghost 3.png',
-            ghost4: '../png/ghost 4.png'
+            pacman: 'png/pacman.png',
+            ghost1: 'png/ghost1.png',
+            ghost2: 'png/ghost2.png',
+            ghost3: 'png/ghost3.png',
+            ghost4: 'png/ghost4.png'
         };
         
         let loadedImages = 0;
@@ -590,3 +590,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error creating game:', error);
     }
 });
+
